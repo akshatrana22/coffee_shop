@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#a9caef"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COFFEE SHOP"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="#e1dbdb"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="NAME :"
+        android:id="@+id/name1"
+        android:layout_marginLeft="22dp"
+        android:textSize="20dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="#e1dbdb"
+        android:id="@+id/enter_name"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:text="Enter Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COFFEE TYPE :"
+        android:id="@+id/coffee_type"
+        android:layout_marginLeft="22dp"
+        android:textSize="20dp"
+        android:layout_marginTop="22dp"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1dbdb"
+        android:id="@+id/type1"
+        android:layout_marginLeft="22dp"
+        android:hint="Type"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUANTITY :"
+             android:id="@+id/quantity"
+            android:layout_marginLeft="22dp"
+            android:textSize="20dp"
+            android:layout_marginTop="22dp"
+            android:textColor="#000"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:id="@+id/first"
+                android:background="#e1dbdb"
+                android:text="250ml"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:background="#e1dbdb"
+                android:id="@+id/second"
+                android:layout_marginTop="22dp"
+                android:layout_height="wrap_content"
+                android:text="500ml"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_height="wrap_content"
+                android:background="#e1dbdb"
+                android:id="@+id/third"
+                android:text="1000ml"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="Order"
+            android:id="@+id/hello"
+            android:layout_gravity="center"
+            android:layout_marginTop="66dp"/>
+</LinearLayout>
